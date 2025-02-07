@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+input {
+  outline: none;
+  border: 1px solid #ccc;
+  font-size: 20px;
+  padding: 9.8px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #007bff;
+  transform: scale(1.5);
+  margin-right: 8px;
+  margin: 7px;
+}
+
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #007bff;
+  transform: scale(1.5);
+  margin-right: 8px;
+  margin: 7px;
+}
+
+select {
+  outline: none;
+}
+
+.react-date-picker__wrapper,
+.react-time-picker__wrapper {
+  border: 1px solid #ccc !important;
+  padding: 6px;
+}
+
+/* General container styling */
+.react-date-picker,
+.react-time-picker {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.react-date-picker:hover,
+.react-time-picker:hover {
+  border-color: #007bff;
+}
+
+/* Input fields */
+.react-date-picker__inputGroup,
+.react-time-picker__inputGroup {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+  padding: 5px;
+}
+
+/* Placeholder & Selected value */
+.react-date-picker__inputGroup input,
+.react-time-picker__inputGroup input {
+  border: none;
+  outline: none;
+  width: 100%;
+  text-align: center;
+  background: transparent;
+  font-size: 20px;
+  color: #0a0a0a;
+}
+
+/* Remove up/down arrows in number inputs */
+.react-date-picker__inputGroup input[type="number"],
+.react-time-picker__inputGroup input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.react-date-picker__inputGroup input::-webkit-outer-spin-button,
+.react-date-picker__inputGroup input::-webkit-inner-spin-button,
+.react-time-picker__inputGroup input::-webkit-outer-spin-button,
+.react-time-picker__inputGroup input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Calendar & Clock Popups */
+.react-calendar,
+.react-clock {
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Calendar navigation buttons */
+.react-calendar__navigation button {
+  color: #007bff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.react-calendar__navigation button:hover {
+  background: #f0f0f0;
+  border-radius: 5px;
+}
+
+/* Selected date */
+.react-calendar__tile--active {
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Time picker dropdown */
+.react-time-picker__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.react-time-picker__button {
+  color: #007bff;
+  padding: 5px;
+}
+
+.react-time-picker__button:hover {
+  background: #f0f0f0;
+  border-radius: 5px;
+}
